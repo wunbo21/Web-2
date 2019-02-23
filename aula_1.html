@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Aula 01 - Javascript</title>
+	<meta charset="UTF-8">
+	<script> 
+	
+		//Comentário de uma linha
+		/*Comentario com mais de
+		uma linha */
+		
+		alert("Olá!Sejam bem vindos. A data e hora atual são:\n" + Date ()); //Abre um caixa de mensagem, Date mostra o ano, mes, hora e local
+		document.write("Agora vamos aprender a usar o Javascript!\n"); //Mostra algo no corpo da página, o \n pula linha
+		document.write("O comando 'alert' mostra uma imagem na tela assim que a pagina abre através de PopUp.<br>");
+		document.write("Agora já o comando 'document.write' mostra algo no corpo da página.<br>"); 
+		document.write("Lembre-se, todo comando em Javascript termina com ponto e virgula.<br>");
+		document.write("<font color=#FF00FF size=6>Para mudar a cor da letra no JavaScript, você escreve o comando em line.</font><br>");
+		document.write("O símbolo de + é utilizado para chamar uma função, para contatenar e para somar.<br>");
+		document.write("Para pular linha no comando alert, usa-se obrigatoria mente o contra barra n '\n'.<br><br>");
+		document.write("Existem 3 maneira de declarar uma variavel:<br><br>");
+		document.write("var nome='Lucas'<br> var _nome='Lucas' <br>var $nome='Lucas'<br><br>");
+		document.write("Lembrando também que existem 3 tipos de variaveis:<br> String, Number e Boolean.");
+		
+		var $nome="Lucas Bernardes\n";
+		var _idade="Tem 21 anos\n";
+		var facul="Estuda na LaSalle\n";
+		var $email="Seu email da faculdade é lucas.bernardes@soulasalle.com.br";
+		var $relax="Para relaxar:";
+		var $hp="Snape sempre foi o heroí";
+		
+		alert($nome + _idade + facul + $email);
+		alert($relax + "\n" + $hp);
+		document.write("<br>" + $nome + _idade + facul + $email + "<br>");
+		
+		//Scape de caracteres
+		
+		var $nome2="Luc\//as";
+		alert($nome2 + "<br>");
+		document.write($nome2 + "\n");
+		
+		var $nome3="Luc\u00A0as"; //u00A0 comando usado para dar espaço
+		alert($nome3 + "\n");
+		document.write("<br>" + $nome3);
+		
+		document.write("<br> O comando u00A0 é usado para dar espaço, pois dentro do alerta usar a tecla espaço não funciona, lembre-se que esse comando é case sensitive <br>");
+		
+		//Fim do Scape de caracteres
+		
+		//Usando o comando prompt, para abrir uma caixa de formulário, somente para o comando alert
+		
+		var $nome4=prompt ("Qual o seu nome?"); //Abre a caixa de comando
+			alert("Prazer em conhece-la (o)\u00A0" + $nome4);
+		var $idade1=prompt ("Qual é a sua idade?")
+			alert("Parece que você tem\u00A0" + $idade1 + "\u00A0anos");
+			
+		//Fim do uso do comando prompt
+		
+		//Operadores aritméticos: Soma, Subtração, Multiplicação, Divisão e Resto da Divisão
+		
+		//Soma
+		
+		var $soma=10 + 5;
+			alert("A soma dos numeros é:\u00A0" + $soma);
+			document.write("A soma dos numeros é \u00A0 " + $soma + "<br>");
+			
+		var $soma1="10" + "5";
+			alert("Dez dezenas com 5 unidades o resultado é:\u00A0 \n" + $soma1);
+			document.write("Dez dezenas com 5 unidades o resultado é:\u00A0" + $soma1 + "<br>");
+			
+		//Subtração
+		
+		var $sub=10.5 - 5; // Não se utiliza vírgula em programação, usa-se um ponto.
+			alert("A subtração dos numeros é:\u00A0" + $sub);
+			document.write("Subtrair 5 de 10.5 é igual a:\u00A0" + $sub + "<br>");
+			document.write("Lembre-se na programação não usamos a vírgula com número quebrados e sim o ponto. <br>");
+			
+		//Multiplicação
+		
+		var $mult=10.5 * 5;
+			alert("A multiplicação entre os número é:\u00A0" + $mult);
+			document.write("A multiplicação entre os números é:\u00A0" + $mult + "<br>");
+			
+		//Divisão
+		
+		var $div=10.5 / 5;
+			alert("A divisão entre os números é igual a:\u00A0" + $div);
+			document.write("A divisão entres os números é igual a:\u00A0" + $div + "<br>");
+			
+		//Resto da Divisão
+		
+		var $rest=30 % 10;
+			alert("O resto da divisao entre os números é igual a:\u00A0" + $rest);
+			document.write("O resto da divisão entres os números é igual a:\u00A0" + $rest + "<br>");
+			
+		//Outra maneira de somar, subtrair e etc.
+		
+		alert("A soma dos numeros é:\u00A0" + (10 + 5));
+		document.write("A soma dos numeros é:\u00A0" + (10 + 5) + "<br>");
+		
+		//Operações buscando dados que o usuario fornece com o parseInt (para o somatório), lembre-se quando o comando é composto a segunda parte começa com letra maiuscula
+		
+		var $valor1=parseInt(prompt("Entre com um valor:"));
+		var $valor2=parseInt(prompt("Entre com outro valor:"));
+		var $soma2= $valor1 + $valor2;
+			alert("A soma do primeiro com o segundo número é:\u00A0" + $soma2);
+			
+		var $valor3=prompt("Entre com um valor:");
+		var $valor4=prompt("Entre com outro valor:");
+			alert("A subtração do primeiro com o segundo número é:\u00A0" + ($valor3 - $valor4));
+		
+	</script>
+</head>
+
+<body> <!-- Para inserir um comentário, no html -->
+	
+</body>
+
+</html>
