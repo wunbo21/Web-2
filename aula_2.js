@@ -25,7 +25,7 @@ var valor=Math.max(12,36)
 alert("O maior valor é \u00A0"+ valor);
 document.write("<br>O maior valor é \u00A0"+ valor);
 
-//min - para mostra o maior valor
+//min - para mostra o menor valor
 var valor=Math.min(12,36)
 alert("O menor valor é \u00A0"+ valor);
 document.write("<br>O menor valor é \u00A0"+ valor);
