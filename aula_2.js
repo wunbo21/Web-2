@@ -4,8 +4,7 @@ confirm("Tem certeza que deseja que você quer vender a sua alma?");
 //Operador ternário é representado pela expressão, variavel=condição?verdadeiro:falso
 var i;
 
-for(i = 0; i < 1
-    ; i++){
+for(i = 0; i < 1; i++){
     var idade = prompt("Qual é a sua idade?");
     if(idade >= 18){
         alert("Você é maior de idade!");
