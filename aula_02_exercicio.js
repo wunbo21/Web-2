@@ -15,16 +15,16 @@ var n1 = parseInt(prompt("Entre com um valor:"));
 var n2 = parseInt(prompt("Entre com um valor:"));
 
 //Qst 1 letra A
-document.write("<br>A soma de "+ n1 +"+"+ n2 +" é igual a\u00A0"+ (n1 + n2));
+document.write("<br>A soma de "+ n1 +"+"+ n2 +" é igual a:\u00A0"+ (n1 + n2));
 
 //Qst 1 letra B
-document.write("<br>O produto entre "+ n1 +" e "+ n2 +" é igual a:"+ (n1 * n2));
+document.write("<br>O produto entre "+ n1 +" e "+ n2 +" é igual a:\u00A0"+ (n1 * n2));
 
 //Qst 1 letra C
-document.write("<br>A divisão entre "+ n1+" e "+ n2+" é igual a:"+ (n1 / n2));
+document.write("<br>A divisão entre "+ n1+" e "+ n2+" é igual a:\u00A0"+ (n1 / n2));
 
 //Qst 1 letra D
-document.write("<br>A subtração entre "+ n1+" e "+ n2+" é igual a:"+ (n1 - n2));
+document.write("<br>A subtração entre "+ n1+" e "+ n2+" é igual a:\u00A0"+ (n1 - n2));
 
 //Questão 2
 var nota1 = parseInt(prompt("Entre com um valor:"));
