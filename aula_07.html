@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aula_07</title>
+    <script src="aula_07.js"></script>
+</head>
+
+<body bgcolor=#008B8B>
+
+    <h1>Calculadora</h1>
+    <table border='4'>
+    <input type="textarea" id="visor">
+    <tr>
+        <td><input type="submit" class="button" value="7" onclick="preencher(7);"></td>
+        <td><input type="submit" class="button" value="8" onclick="preencher(8);"></td>
+        <td><input type="submit" class="button" value="9" onclick="preencher(9);"></td>
+        <td><input type="submit" class="button" value="*" onclick="preencher('*');"></td>
+    </tr>
+    <tr>
+        <td><input type="button" class="button" value="4" onclick="preencher(4);"></td>
+        <td><input type="submit" class="button" value="5" onclick="preencher(5);"></td>
+        <td><input type="submit" class="button" value="6" onclick="preencher(6);"></td>
+        <td><input type="submit" class="button" value="-" onclick="preencher('-');"></td>
+    </tr>
+    <tr>
+        <td><input type="submit" class="button" value="1" onclick="preencher(1);"></td>
+        <td><input type="submit" class="button" value="2" onclick="preencher(2);"></td>
+        <td><input type="submit" class="button" value="3" onclick="preencher(3);"></td>
+        <td><input type="submit" class="button" value="+" onclick="preencher('+');"></td>
+    </tr>
+    <tr>
+        <td><input type="submit" class="button" value="C" onclick="limpar();"></td>
+        <td><input type="submit" class="button" value="0" onclick="preencher(0);"></td>
+        <td><input type="submit" class="button" value="=" onclick="calcular('=');"></td>
+        <td><input type="submit" class="button" value="/" onclick="preencher('/');"></td>
+    </tr>
+    </table>
+
+
+
+            Quilos:<input type="text" id="kg">
+            Altura:<input type="text" id="m">
+            <input type="submit" value="Calcular" onClick="imc();">
+            IMC:<input type="text" id="massa">
+
+
+
+</body>
+
+</html>
