@@ -1,0 +1,33 @@
+<!--Efetue um programa em js que receba os valores de A, B, C e D. Efetue a soma entre A e C e a multiplicação entre B e D
+    Verifique se o resultado da soma é maior, menor ou igual ao da multiplicação. Usem o getElementById.
+-->
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Aula 08</title>
+        <script src="aula_8_exercicio.js"></script>
+    </head>
+
+    <body>
+
+        <form method="Post" action="aula8.php">
+
+            <fieldset><legend>Cadastro</legend>
+                
+                <input type="button" value="Valor A" id="valor.a" onclick="valor_a = prompt('Digite o valor de A: ')">
+                <input type="button" value="Valor B" id="valor.b" onclick="valor_b = prompt('Digite o valor de B: ')">
+                <input type="button" value="Valor C" id="valor.c" onclick="valor_c = prompt('Digite o valor de C: ')">
+                <input type="button" value="Valor D" id="valor.d" onclick="valor_d = prompt('Digite o valor de D: ')">
+                <input type="button" value="Resultado" onclick="escrever(this.form.Area)"/>
+                <p><textarea rows="10" cols="40" name="Area"></textarea></p>
+                
+            </fieldset>
+        
+        </form>
+
+    </body>
+
+</html>
